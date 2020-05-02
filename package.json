@@ -1,0 +1,22 @@
+{
+  "name": "calcalorias",
+  "version": "1.0.0",
+  "description": "Calculadora de Calorias",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
+    "gatsby": "^2.20.23",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-styled-components": "^3.2.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "styled-components": "^5.1.0",
+    "styled-reset": "^4.1.3"
+  }
+}
