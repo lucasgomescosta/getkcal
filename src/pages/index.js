@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react'
-import { Container, Header, Form, Result, GlobalStyle, BODY } from './styles'
+import { Container, Header, Form, Result, GlobalStyle, Body } from './styles'
 import logo from '../assets/logo.svg';
 
 function Index() {
@@ -22,15 +22,9 @@ function Index() {
     const maintenance = Math.round(tmb * Number(activity));
     const loseWeight = maintenance - 450;
     const gainWeight = maintenance + 450;
-    alert(`
-    Seu metabolismo basal é de ${tmb} calorias.\n
-    Para manter o seu peso você precisa consumir em média ${maintenance} calorias.\n
-    Para perder peso você precisa consumir em média ${loseWeight} calorias\n
-    Para ganhar peso você precisa consumir em média ${gainWeight} calorias\n
-    `)
     const layout = `
     <h2>Aqui está o resultado:</h2>
-    <div class="result-content">
+    <div>
       <ul>
         <li>
           Seu metabolismo basal é de <strong>${tmb} calorias</strong>.
@@ -48,7 +42,7 @@ function Index() {
     </div>
   `;
     
-    const result = document.getElementById('result');
+    const result = document.getElementById('Result');
 
     result.innerHTML = layout; 
 
@@ -61,28 +55,28 @@ function Index() {
       <Header>
         <img src={logo} alt="getkcal" />
       </Header>
-      <BODY>
+      <Body>
         <Form onSubmit={handleSubmit}>
-          <div class="form-group">
+          <div className="form-group">
             <label for="gender">Seu sexo</label>
             <select id="gender" onChange={e => setSexo(e.target.value)}>
               <option value="male">Masculino</option>
               <option value="female">Feminino</option>
             </select>
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="age">Sua idade</label>
             <input type="number" id="age" onChange={e => setAge(e.target.value)} />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="weight">Seu peso</label>
             <input type="number" id="weight" onChange={e => setWeight(e.target.value)}/>
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="height">Sua altura</label>
             <input type="number" id="height" onChange={e => setHeight(e.target.value)} />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="activity">Seu nível de atividade física</label>
             <select id="activity" onChange={e => setActivity(e.target.value)}>
               <option value="1.2">Sedentário</option>
@@ -93,15 +87,15 @@ function Index() {
             </select>
           </div>
 
-          <div class="form-group">
+          <div className="form-group">
             <button type="submit">Calcular!</button>
           </div>
         </Form>
-        <div class="result-container" id="result"></div>
-        <Result>
         
+        <Result>
+        <div className="result-container" id="Result"></div>
         </Result>
-      </BODY>
+      </Body>
     </Container>
     </>
   );

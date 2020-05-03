@@ -9,7 +9,7 @@ export const Container = styled.div`
   -webkit-box-sizing: border-box;
 `;
 
-export const BODY = styled.div`
+export const Body = styled.div`
   max-width: 550px;
   background: #FFF;
   border-radius: 4px;
@@ -77,25 +77,26 @@ export const Form = styled.form`
 export const Result = styled.div`
   margin-top: 50px;
 
-  .result-content {
+  .result-container {
+    background: #1A1A1A;
     margin-top: 10px;
     background: #1A1A1A;
     border-radius: 5px;
     padding: 15px;
   }
 
-  .result-content ul {
+  .result-container  ul {
     list-style: none;
   }
 
-  .result-content ul li {
+  .result-container ul li {
     font-size: 14px;
     font-weight: bold;
     font-family: 'Montserrat Bold', sans-serif;
     line-height: 30px;
   }
 
-  .result-content ul li strong {
+  ..result-container ul li strong {
     color: #FF7373;
   }
 `;
