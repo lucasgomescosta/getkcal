@@ -22,4 +22,6 @@ This project was developed with the following technologies:
 - [styled-components](https://styled-components.com/)
 
 ## 🔖 Layout
+
+<img alt="BeTheHero" title="#BeTheHero" src="https://github.com/lucasgomescosta/getkcal/blob/master/paginicial.PNG" width="950px" />
 <img alt="Resultado" title="#Resultado" src="https://github.com/lucasgomescosta/getkcal/blob/master/result.PNG" width="950px" />
