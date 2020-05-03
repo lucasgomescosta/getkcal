@@ -10,7 +10,7 @@
 
 ## 💻 Project
 
-Add uma descrição do projeto
+gitkcal calcular a quantidade de caloria do seu metabolismo, informar o consumo médio de quantidade de calorias que deve ser ingerida para manter seu peso e informar a quantidade de calorias que você deve ingerir caso queira perde ou ganhar kilos.
 
 
 ## :rocket: Technologies
